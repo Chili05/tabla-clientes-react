@@ -1,38 +1,121 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  font-family: 'Inter', sans-serif;
+}
+
 .App {
+  max-width: 1100px;
+  margin: 50px auto;
+  background: white;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
   text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #2f3542;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button.boton-pdf {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button.boton-pdf:hover {
+  background-color: #2563eb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+thead {
+  background-color: #3b82f6;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+th,
+td {
+  padding: 18px 20px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+tbody tr {
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+th:first-child,
+td:first-child {
+  border-top-left-radius: 12px;
+}
+
+th:last-child,
+td:last-child {
+  border-top-right-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+    margin: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    background: white;
+  }
+
+  td {
+    padding: 12px;
+    text-align: left;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
   }
 }

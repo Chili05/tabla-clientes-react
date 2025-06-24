@@ -1,0 +1,30 @@
+[
+  {
+    "cedula": "123456789",
+    "nombre": "Ana López",
+    "correo": "ana@gmail.com",
+    "direccion": "Calle 45 #32-11",
+    "cargo": "Gerente"
+  },
+  {
+    "cedula": "987654321",
+    "nombre": "Luis Martínez",
+    "correo": "luis@gmail.com",
+    "direccion": "Carrera 10 #15-20",
+    "cargo": "Contador"
+  },
+  {
+    "cedula": "456123789",
+    "nombre": "María Pérez",
+    "correo": "maria@gmail.com",
+    "direccion": "Av. 68 #90-12",
+    "cargo": "Asistente"
+  },
+  {
+    "cedula": "789456123",
+    "nombre": "Carlos Ruiz",
+    "correo": "carlos@gmail.com",
+    "direccion": "Calle 20 #18-25",
+    "cargo": "Técnico"
+  }
+]
